@@ -1,0 +1,15 @@
+{
+  "name": "task4",
+  "version": "1.0.0",
+  "description": "Task4 for Wazuh interview",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Martin Di Palma",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^20.0.0"
+  }
+}
