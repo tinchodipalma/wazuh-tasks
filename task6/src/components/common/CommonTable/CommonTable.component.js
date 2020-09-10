@@ -46,7 +46,7 @@ const CommonTable = ({
         <Toolbar className="CommonTable__Toolbar">
           {displayTotal && (
             <div className="CommonTable__Toolbar__Column">
-              <Typography>Total: {total}</Typography>
+              <Typography align="left">Total: {total}</Typography>
             </div>
           )}
           {!!onSearch && (

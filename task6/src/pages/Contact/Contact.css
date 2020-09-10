@@ -1,0 +1,13 @@
+.ContactPage__Row {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.ContactPage__Row__Label {
+  padding-right: 10px;
+}
+
+.ContactPage__Row a {
+  text-decoration: none;
+  color: #7d7dff;
+}

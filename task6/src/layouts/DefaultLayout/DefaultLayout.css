@@ -1,0 +1,17 @@
+.DefaultLayout__Main {
+  margin: 0 auto 100px;
+  width: 95%;
+  overflow-x: hidden;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .DefaultLayout__Main {
+    width: auto;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
