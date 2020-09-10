@@ -10,7 +10,7 @@ const AppContainer = () => (
     {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
     <CssBaseline />
     <WebRouter>
-      <App />;
+      <App />
     </WebRouter>
   </ThemeProvider>
 );
