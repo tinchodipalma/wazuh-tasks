@@ -12,6 +12,10 @@ Web page that shows a list of vehicles and brands.
 2. Execute `npm run start`
 3. Go to http://localhost:3000/
 
+#### Tests
+
+1. Execute `npm run test`
+
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
