@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import {
   AppBar,
@@ -11,6 +10,7 @@ import {
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import { Link } from 'react-router-dom';
+import WazuhLogo from '../../assets/images/wazuh_logo.svg';
 
 import './Navbar.css';
 
@@ -25,10 +25,16 @@ const NavbarMenu = () => {
     <div className="Navbar__Menu__Container" style={menuContainerStyles}>
       <ul className="Navbar__Menu">
         <li>
-          <Link to={`/vehiculos`}>Vehiculos</Link>
+          <Link to="/">Inicio</Link>
         </li>
         <li>
-          <Link to={`/marcas`}>Marcas</Link>
+          <Link to="/vehiculos">Vehiculos</Link>
+        </li>
+        <li>
+          <Link to="/marcas">Marcas</Link>
+        </li>
+        <li>
+          <Link to="/contacto">Contacto</Link>
         </li>
       </ul>
     </div>
@@ -52,10 +58,7 @@ const Navbar = () => {
         <Toolbar className="Navbar__Toolbar">
           <Link to="/" className="Navbar__Col">
             <div className="Navbar__Logo">
-              <img
-                src="//wazuh.com/wp-content/themes/wazuh/assets/images/wazuh_logo.svg"
-                alt="Wazuh Task 6"
-              />
+              <img src={WazuhLogo} alt="Wazuh Task 6" />
             </div>
             <div className="Navbar__Title">
               <Typography variant="h6">Task 6</Typography>
@@ -75,8 +78,6 @@ const Navbar = () => {
   );
 };
 
-Navbar.propTypes = {
-  siteData: PropTypes.object.isRequired,
-};
+Navbar.propTypes = {};
 
 export default Navbar;
