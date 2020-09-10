@@ -1,0 +1,128 @@
+.Navbar__Container .Navbar__Toolbar {
+  display: flex;
+}
+
+.Navbar__Col {
+  display: flex;
+}
+
+.Navbar__Col:last-child {
+  margin-left: auto;
+}
+
+a.Navbar__Col {
+  color: #fafafa;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.Navbar__Logo {
+  min-width: 160px;
+  max-height: 58px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.Navbar__Title {
+  padding: 3px 0 0;
+}
+
+.Navbar__Menu__Container {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.Navbar__Menu {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.Navbar__Menu li {
+  width: 60%;
+  margin: 0 auto;
+  border-bottom: 2px solid #fafafa55;
+}
+
+.Navbar__Menu li:last-child {
+  border-bottom: 0;
+}
+
+.Navbar__Menu li a {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  color: #fafafa;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.Navbar__Menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.Navbar .Navbar__Menu__Button {
+  position: relative;
+  color: #fafafa;
+  padding: 0;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .Navbar--open .Navbar__Menu__Container {
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 1;
+  }
+
+  .Navbar.Navbar--open .Navbar__Toolbar .Navbar__Col:first-child {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    z-index: 10;
+  }
+}
+
+@media (min-width: 768px) {
+  .Navbar__Container .Navbar__Toolbar {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .Navbar__Menu__Container {
+    background-color: transparent !important;
+    display: block;
+    position: relative;
+    width: auto;
+    height: auto;
+    opacity: 1;
+  }
+
+  .Navbar__Menu {
+    display: flex;
+  }
+
+  .Navbar .Navbar__Menu__Button {
+    display: none;
+  }
+
+  .Navbar__Menu li {
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+  }
+}
